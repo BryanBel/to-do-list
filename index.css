@@ -3,6 +3,7 @@
     --secondary: #FF3B3F;
     --accent: #15CD72;
     --black: #0A0A0A;
+    --yellow: #ffe600;
     --shadow-offset: 6px;
 }
 
@@ -75,6 +76,14 @@ body {
     background: #FFF;
 }
 
+.input-showfocus:focus {
+    outline: 1px solid blue;
+}
+  
+.input-not-showfocus:focus {
+    outline: 1px solid gray;
+}
+
 .neobrutal-input:focus {
     outline: none;
     box-shadow: 3px 3px 0 var(--black);
@@ -100,6 +109,7 @@ body {
     background: var(--primary);
     color: white;
     box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--black);
+    cursor: pointer;
 }
 
 .check-button {
@@ -110,6 +120,7 @@ body {
     justify-content: center;
     color: white;
     min-width: 45px;
+    cursor: pointer;
 }
 
 .delete-button {
@@ -120,6 +131,7 @@ body {
     background: var(--secondary);
     color: white;
     min-width: 45px;
+    cursor: pointer;
 }
 
 svg {
@@ -127,6 +139,18 @@ svg {
     stroke: #fff;
     stroke-width: 2;
 }
+
+.input-valid {
+    outline: 1px solid green;
+}
+  
+.input-invalid {
+    outline : 1px solid red;
+}
+  
+.show-helper-text{
+    display: block;
+  }
 
 @media (max-width: 515px) {
     .input {
@@ -160,17 +184,18 @@ svg {
     border: 3px solid var(--black);
     border-radius: 12px;
     box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--black);
-    max-height: 50vh;
+    height: 53vh;
     overflow-y: auto;
     flex-grow: 1;
 }
 
-.task-list {
+#task-list {
     list-style: none;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    height: auto;
 }
 
 @media (max-width: 515px) {
@@ -196,12 +221,8 @@ svg {
     text-align: justify;
 }
 
-.task-item:first-child {
+.task-item.completed .task-text {
     background-color: rgba(138, 129, 129, 0.452);
-}
-
-
-.task-item:first-child .task-text {
     text-decoration: line-through;
 }
 
