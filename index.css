@@ -1,0 +1,236 @@
+:root {
+    --primary: #2B7DE9;
+    --secondary: #FF3B3F;
+    --accent: #15CD72;
+    --black: #0A0A0A;
+    --shadow-offset: 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk';
+}
+
+.space-grotesk {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background: #F5F1E3;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+#main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.title {
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--primary);
+}
+
+/* Input */
+.main-form {
+    border: 3px solid var(--black);
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--black);
+    padding: 1rem;
+}
+
+#main-form-helper-text{
+    color: red;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.input {
+    display: flex;
+    gap: 1rem;
+}
+
+.task-input {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid var(--black);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background: #FFF;
+}
+
+.neobrutal-input:focus {
+    outline: none;
+    box-shadow: 3px 3px 0 var(--black);
+}
+
+/* Botones */
+.button {
+    padding: 1rem 2rem;
+    border: 2px solid var(--black);
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none !important;
+}
+
+.add-button {
+    background: var(--primary);
+    color: white;
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--black);
+}
+
+.check-button {
+    background: var(--accent);
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-width: 45px;
+}
+
+.delete-button {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary);
+    color: white;
+    min-width: 45px;
+}
+
+svg {
+    height: 30px;
+    stroke: #fff;
+    stroke-width: 2;
+}
+
+@media (max-width: 515px) {
+    .input {
+        flex-direction: column;
+    }
+
+    .task-item {
+        flex-direction: column;
+    }
+
+    .task-text {
+        order: 1;
+    }
+
+    .check-button {
+        order: 2;
+    }
+
+    .delete-button {
+        order: 3;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+/* Lista de tareas */
+.tasks-container {
+    background: white;
+    border: 3px solid var(--black);
+    border-radius: 12px;
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--black);
+    max-height: 50vh;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.task-list {
+    list-style: none;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (max-width: 515px) {
+    .tasks-container {
+        height: 43vh;
+    }
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #FFF;
+    border: 2px solid var(--black);
+    border-radius: 8px;
+}
+
+.task-text {
+    flex: 1;
+    font-size: 1.1rem;
+    color: var(--black);
+    text-align: justify;
+}
+
+.task-item:first-child {
+    background-color: rgba(138, 129, 129, 0.452);
+}
+
+
+.task-item:first-child .task-text {
+    text-decoration: line-through;
+}
+
+/* Contadores */
+.counters {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0.55rem;
+    background: var(--secondary);
+    border: 3px solid var(--black);
+    border-radius: 12px;
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--black);
+}
+
+.counter-item {
+    text-align: center;
+}
+
+.counter-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.counter-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+}
