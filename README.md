@@ -3,10 +3,10 @@
 ## Descripción
 Esta es una aplicación sencilla de lista de tareas (To-Do List) que permite a los usuarios gestionar sus tareas diarias de manera eficiente. La aplicación es fácil de usar y está diseñada para ayudar a los usuarios a mantenerse organizados.
 
-## 🚀 Características (No contiene JavaScript)
+## 🚀 Características
 - ✅ **Añadir nuevas tareas**: Permite a los usuarios agregar tareas a su lista.
 - 🗑️ **Eliminar tareas**: Los usuarios pueden eliminar tareas completadas o no deseadas.
-- 🔄 **Editar las tareas**: Los usuarios pueden marcar tareas como completadas.
+- 🔄 **Marcar tareas como completadas**: Los usuarios pueden marcar tareas como completadas.
 
 ## 🛠️ Tecnologías utilizadas
 Lista de las tecnologías, lenguajes o herramientas que has utilizado:
@@ -26,9 +26,6 @@ Pasos para instalar y ejecutar el proyecto en un entorno local.
 3. **Abre el archivo principal en tu navegador:**
    - En Windows: start index.html
    - En macOS: start index.html
-
-O simplemente puedes checkear la pagina haciendo click aqui: 
-[https://bryanbel.github.io/to-do-list/]
    
 ## 🖥️ Uso
 - **Añadir una tarea:** Escribe la tarea en el campo de texto y presiona Enter o haz clic en el botón "Añadir".
@@ -66,4 +63,5 @@ Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
 - 👤 **Nombre**: Bryan Belandria  
 - 📧 **Email**: [bryanbelandriav@gmail.com](mailto:bryanbelandriav@gmail.com)  
-- 🌐 **Repositorio**: [https://github.com/BryanBel/To-Do-List]
+- 🌐 **Repositorio**: [https://github.com/BryanBel/To-Do-List](https://github.com/BryanBel/To-Do-List)  
+# initial-contacts
