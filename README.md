@@ -63,5 +63,4 @@ Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
 - 👤 **Nombre**: Bryan Belandria  
 - 📧 **Email**: [bryanbelandriav@gmail.com](mailto:bryanbelandriav@gmail.com)  
-- 🌐 **Repositorio**: [https://github.com/BryanBel/To-Do-List](https://github.com/BryanBel/To-Do-List)  
-# initial-contacts
+- 🌐 **Repositorio**: [https://github.com/BryanBel/To-Do-List](https://github.com/BryanBel/To-Do-List)
