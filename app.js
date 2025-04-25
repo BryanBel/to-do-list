@@ -26,8 +26,10 @@ const addTask = (newTask) => {
 const renderTasks = (list) => {
   list.innerHTML = "";
   tasks.forEach((task) => {
+    console.log(task)
     const li = document.createElement("li");
     li.classList.add("task-item");
+    if(task.completed) li.classList.add("completed");
     li.id = task.id;
 
     const taskText = `
@@ -61,10 +63,24 @@ const getTasksFromBrowser = () => {
 
 /**
  * Completa una tarea
- * @param {string} id
+ * @param {string} taskId
  */
 const completeTask = (taskId) => { 
-    tasks = tasks.map((task) => {if (task.id === taskId) task.completed = true})
+  tasks = tasks.map((task) => {
+    if (task.id === taskId) {
+      return { ...task, completed: true };
+    }
+    return task;
+  });
+};
+
+const incompleteTask = (taskId) => { 
+  tasks = tasks.map((task) => {
+    if (task.id === taskId) {
+      return { ...task, completed: false };
+    }
+    return task;
+  });
 };
 
 /**
@@ -75,4 +91,17 @@ const removeTask = (id) => {
   tasks = tasks.filter((task) => task.id !== id);
 };
 
-export { addTask, renderTasks, saveTasksInBrowser, getTasksFromBrowser, removeTask, completeTask };
+/**
+ * Actualizar los contadores con las tareas
+ */
+const updateCounters = () => {
+  const totalTasks = tasks.length;
+  const completedTasks = tasks.filter((task) => task.completed).length;
+  const incompletedTasks = totalTasks - completedTasks;
+
+  totalCounter.textContent = totalTasks;
+  completedCounter.textContent = completedTasks;
+  incompletedCounter.textContent = incompletedTasks;
+};
+
+export { addTask, renderTasks, saveTasksInBrowser, getTasksFromBrowser, removeTask, completeTask, incompleteTask, updateCounters };

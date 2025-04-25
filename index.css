@@ -67,6 +67,14 @@ body {
     gap: 1rem;
 }
 
+.task-input-not-show-focus:focus {
+    outline: auto;
+}
+
+.task-input-show-focus:focus {
+    outline: blue;
+}
+
 .task-input {
     flex: 1;
     padding: 1rem;
@@ -74,6 +82,7 @@ body {
     border-radius: 8px;
     font-size: 1.1rem;
     background: #FFF;
+    
 }
 
 .input-showfocus:focus {
@@ -221,8 +230,11 @@ svg {
     text-align: justify;
 }
 
-.task-item.completed .task-text {
+.task-item.completed {
     background-color: rgba(138, 129, 129, 0.452);
+}
+
+.task-item.completed .task-text {
     text-decoration: line-through;
 }
 

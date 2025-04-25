@@ -26,6 +26,8 @@ Pasos para instalar y ejecutar el proyecto en un entorno local.
 3. **Abre el archivo principal en tu navegador:**
    - En Windows: start index.html
    - En macOS: start index.html
+
+O puedes probar la pagina aqui: [https://bryanbel.github.io/to-do-list/]
    
 ## 🖥️ Uso
 - **Añadir una tarea:** Escribe la tarea en el campo de texto y presiona Enter o haz clic en el botón "Añadir".
