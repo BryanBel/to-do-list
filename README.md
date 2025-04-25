@@ -12,7 +12,7 @@ Esta es una aplicación sencilla de lista de tareas (To-Do List) que permite a l
 Lista de las tecnologías, lenguajes o herramientas que has utilizado:
 - **HTML5**: Para la estructura de la aplicación.
 - **CSS3**: Para el diseño y estilo visual.
-- **JavaScript**: *Por el momento no se está utilizando, pero se implementará en próximos commits para añadir interactividad y funcionalidades avanzadas.*
+- **JavaScript**: Permite tener una pagina interactiva en la cual puedes clickear los botones de crear, completar y elimninar tarea, o un contador para cada categoria.
 
 ## 📥 Instalación
 Pasos para instalar y ejecutar el proyecto en un entorno local.
@@ -46,7 +46,6 @@ Lista de posibles mejoras o funcionalidades que se podrían añadir en el futuro
 - **Implementar categorías o etiquetas**: Organizar las tareas por categorías o etiquetas.
 - **Crear recordatorios o notificaciones**: Añadir recordatorios para tareas importantes.
 - **Sincronización con la nube**: Guardar las tareas en la nube para acceder desde cualquier dispositivo.
-- **Versión móvil**: Desarrollar una aplicación móvil para mayor comodidad.
 
 ## 🤝 Contribuciones
 Si deseas contribuir a este proyecto, sigue estos pasos:
